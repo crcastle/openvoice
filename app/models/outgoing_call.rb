@@ -27,13 +27,13 @@ class OutgoingCall < ActiveRecord::Base
     ov_voice = params[:ov_voice]
     default_number = params[:from]
     destination = params[:to]
-    tropo = Tropo::Generator.new do
-      call({ :from => ov_voice,
-             :to => default_number,
-             :network => 'PSTN',
-             :channel => 'VOICE' })
-      say 'connecting you to destination'
-      transfer({ :to => destination, :from => ov_voice })
+    # tropo = Tropo::Generator.new do
+    #   call({ :from => ov_voice,
+    #          :to => default_number,
+    #          :network => 'PSTN',
+    #          :channel => 'VOICE' })
+    #   say 'connecting you to destination'
+    #   transfer({ :to => destination, :from => ov_voice })
     end
 
     tropo.response
