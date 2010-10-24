@@ -16,6 +16,6 @@ config.action_controller.perform_caching             = false
 # Don't care if the mailer can't send
 config.action_mailer.raise_delivery_errors = false
 
-SERVER_URL = "http://web1.tunnlr.com:10790"
-OUTBOUND_TOKEN_VOICE = "ac3c8899cac98a49a8af38bac8dcffeb071ea78b27670989282ab28755da9413ecd5b3af59008c8c4c2e99f3"
-OUTBOUND_TOKEN_MESSAGING = "7c5c3cf9ac55114187ae67e5d3765a3d970604a7879154d65c9dfb9d18053b6244baff37e26e9fd291246207"
+SERVER_URL = "http://localhost"
+OUTBOUND_TOKEN_VOICE = "b24376e677c3e5418d3052347eb4e1e3f468207992332527a84decc93fee0a744dc2ca07b890b34e4947b13c"
+OUTBOUND_TOKEN_MESSAGING = "6cfae8b242d7bf409e7374b77717e020c33a24c5e6a589624e0f51cbc86a24f4dc9ab1111798739b5979dffb"
