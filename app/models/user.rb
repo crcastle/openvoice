@@ -35,7 +35,7 @@ class User < ActiveRecord::Base
     tp = ENV['TROPO_PASS']
     ta = ENV["TROPO_APP"]
     url = "http://" + tu + ":" + tp + "@api.tropo.com/provisioning/applications/" + ta + "/addresses/"
-    resp = RestClient.post (url, { :type => "number" }.to_json, :content_type=> :json, :accept => :json )
+    resp = RestClient.post(url, { :type => "number" }.to_json, :content_type=> :json, :accept => :json )
     new_number = JSON.parse(resp.body)["href"].match(%r{(.*/)(.*)})[2]
     profile = profiles.build(:voice => new_number,
                              :voice_token => OUTBOUND_TOKEN_VOICE,
